@@ -1,0 +1,10 @@
+.page-title{
+    /* [nume proprietate]: [valoare]; */
+    color: hsl(75, 94%, 57%);
+    background-color: black;
+    text-decoration: line-through;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 100;
+}

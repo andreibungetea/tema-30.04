@@ -1,0 +1,73 @@
+* {
+   margin: 0px;
+   font-family: "Inter", serif;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+.page-body {
+    background-color:var(--grey-900);
+}
+
+.presentation-card-container {
+    background-color: hsl(0, 0%, 12%);
+    width: 440px;
+    border-radius: 12px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+}
+
+.presentation-card-image{
+    width: 120px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.presentation-card-heading{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+.presentation-card-location{
+    color: var(--green);
+    text-align: center;
+    margin-top: 12px;
+}
+
+.presentation-card-motto{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-top: 24px;
+    opacity: 75%;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.presentation-card-link{
+    color: var(--white);
+    display: block;
+    background-color: var(--grey-700);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.last-link{
+    margin-bottom: 0;
+}

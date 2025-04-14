@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "League Spartan";
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+header {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 1100px;
+}
+
+.header-title {
+    font-size: 40px;
+    color: var(--very-dark-magenta);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-paragraph {
+    text-align: center;
+    font-size: 19px;
+    color: var(--dark-grayish-magenta);
+    margin-bottom: 40px;
+    line-height: 24px;
+}
+
+/* Platform reviws */
+.platform-review-container {
+    background-color: var(--light-grayish-magenta);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: center;
+    /* ox justify content (aranajre la st sau la dr*/
+    /* oy display-items */
+    margin-bottom: 12px;
+    gap: 4px;
+}
+
+
+.platform-review-container h3 {
+    text-align: center;
+    color: var(--very-dark-magenta);
+    font-size: 17px;
+}
+
+/* Buyer reviews */
+.buyer-review-container {
+    background-color: var(--very-dark-magenta);
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 16px;
+}
+
+.buyer-review-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.buyer-review-header img {
+    width: 44px;
+    border-radius: 50%;
+}
+
+.buyer-review-header h3 {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500; 
+    margin-bottom: 4px;    
+}
+.buyer-review-header p {
+    color: var(--soft-pink);
+    opacity: 75%;
+    font-size: 17px;
+    font-weight: 400; 
+}
+.buyer-review-container blockquote {
+    color: var(--light-grayish-magenta);
+    font-size: 17px;
+    line-height: 22px;
+}
+
+@media (min-width: 1024px) {
+    header {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-first-row {
+        display: flex;
+        align-items: center;
+        gap: 150px;
+    }
+
+    .header-title {
+        text-align: left;
+        max-width: 360px;
+        font-size: 56px;
+    }
+
+    .header-paragraph {
+        text-align: left;
+        max-width: 436px;
+    }
+
+    .platform-review-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 400px;
+        padding-left: 32px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .stars-container {
+        margin-bottom: 0px;
+    }
+
+    .platform-review-container:nth-of-type(2) {
+        margin-left: 48px;
+    }
+
+    .platform-review-container:nth-of-type(3) {
+        margin-left: 96px;
+    }
+
+    .buyer-review-card {
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .buyer-review-container:nth-of-type(2) {
+        margin-top: 24px;
+    }
+    
+    .buyer-review-container:nth-of-type(3) {
+        margin-top: 48px;
+    }
+}
+

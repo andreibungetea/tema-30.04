@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Heading one -->
+    <h1 class="page-title">Primul meu web-site</h1>
+
+    <a href="#product"> Vezi produsul</a>
+    <!-- Heading two -->
+    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+    <!-- <p></p> Paragraph: Folosit pentru texte non-titluri  -->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum minima,
+      doloribus quo illo natus voluptates. Earum neque repudiandae perspiciatis
+      maiores, sed, natus vitae est accusantium, debitis assumenda iure
+      asperiores maxime!
+    </p>
+
+    <!-- unorderd list ul -->
+    <ul>
+      <!-- list item li -->
+      <li>Primul element</li>
+      <li>Al doilea element</li>
+      <li>Al treilea element</li>
+    </ul>
+
+    <!-- orderd item oi - numeroteaza textul -->
+    <ol>
+      <li>Primul element</li>
+      <li>Al doilea element</li>
+      <li>Al treilea element</li>
+    </ol>
+
+    <!-- self-closing tag -->
+    <a href="https://www.google.com/">
+      <img src="https://picsum.photos/200/300" id="product" />
+      <h3>Produsul meu</h3>
+    </a>
+    <!-- adaugare de link-uri: anchor tag -->
+    <a href="https://code.visualstudio.com/" target="_blank">
+      Descarca VS code
+    </a>
+
+    <!-- HTML atributes src, href, target s.a.
+-> Rol:au rolul de a configura elementele pe care sunt aplicate
+->Particularitati: 
+    - se pun in opening tag
+    - au forma: nume="[valoare]"
+    - unele atribute pot si puse doar in anumite elemente (vezi w3wchool)
+    - unele atribute pot avea doar anumite valori (vezi documentatie w3school)
+    -->
+    <form>
+      <label for="name">Full name</label>
+      <input type="text" id="name" />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" />
+      <br />
+      <label for="date-of-birth">Date of birth</label>
+      <input type="datetime-local" id="date-of-birth" />
+      <br />
+      <input type="checkbox" id="term-and-conditions" />
+      <label for="term-and-conditions">I agree with Terms and conditions</label>
+      <br />
+
+      <label for="working-area">Working area</label>
+      <select>
+        <option>Medical</option>
+        <option>IT</option>
+        <option>Sales</option>
+        <option>Marketing</option>
+        <option>Other</option>
+      </select>
+      <br />
+
+      <button>Submit</button>
+    </form>
+
+    <!-- flow layoout: block si inline
+     block: heafind, paragrafe, list item s.a.
+     inline: anchortag, imagini, butoane, inputs, label s.a.
+
+    -->
+  </body>
+</html>
