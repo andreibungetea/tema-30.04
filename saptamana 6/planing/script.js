@@ -176,11 +176,11 @@ console.log(shoppingList);
 
 // Q: Cum poti adauga un element intr-un index?
 // A: folosind un push
-// formula: numetring.push
+// formula: numestring.push
 //          console.log(numestring);
 // ex: number.push(20);
 
-// Exercitiu: sa se creeze  un array care contine o lista de cumparaturi. Fiecare lucru de cumparat o sa fie un string
+// Exercitiu: sa se creeze un array care contine o lista de cumparaturi. Fiecare lucru de cumparat o sa fie un string
 // Sa se dea push la alte 2 elemente noi
 
 // let list = ["margele", "foi lica", "pepene"];
@@ -192,10 +192,10 @@ let numbers = [5, 3, 32, -2, 107];
 // index       0  1  2   3    4
 // index    5
 
-// let i = 0  pentru ca index-ul porneste de la 0 intr-un array
-// i < numbers.lenght pentru ca mereu ultimul index dintr-un array este mai mic cu 1 decat lungimea array-ului. 
-// indexul intr-un array porneste de la 0
-// i ++ pentru ca vrem sa mergem din index in index
+// let i = 0 --> pentru ca index-ul porneste de la 0(zero) intr-un array
+// i < numbers.lenght --> pentru ca mereu ultimul index dintr-un array este mai mic cu 1 decat lungimea array-ului. 
+// i ++ --> pentru ca vrem sa mergem din index in index
+ 
 // let sum = 0;
 
 // for (let i = 0; i < numbers.length; i++) {
@@ -237,30 +237,6 @@ for (let i = 0; i < numbers.length; i++) {
 //         sum += numbers[i];
 //     }
 // }
-
-// hola mis amigos, las tema asta pana miercoles:
-
-// 1. folosind un for loop sa se afiseze in consola toate numerele de la 10 la 20
-// for (let i= 10; i < 21; i++) {
-//     console.log(`${i}`);
-//     }
-// // 2. folosind un for loop sa se afiseze in consola toate numerele multiplii de 3 de la 10 la 30
-// for (let i = 10; i < 31; i ++) {
-//     if (i % 3 === 0) { 
-//     console.log(i);
-//     }
-// }
-
-// 3. folosind un for loop sa se afisze in consola toate numerele de la 1 la 10 ca mai jos:
-// "1 - impar"
-
-// "2 - par"
-
-// "3 - impar"
-
-// ...
-
-// "10 - par"
 
 // // Practic trebuie afisat numarul, apoi, tot in acelasi string, daca este par sau nu.
 // for (let i = 0; i < 11; i ++) {

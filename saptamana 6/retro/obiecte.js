@@ -1,113 +1,105 @@
-// -- Objects --
+// let name = "Alice";
 
-let productname = "Laptop";
-let productAvailableQuanity = 100;
-let productPrice = 5000;
-let productIsSoldOut = false;
+// for (let i = 0; i < users.length; i++) {
+//     if (users[i].name === "Alice"){
+//         counter++;
+//     }
+// } console.log(counter);
 
-let product = {
-    name: "Latop MacBook M1 Air",
-    availableQuantity: 100,
-    price: 500,
-    isSoldOut: false,
-    related: ["Latop MacBook M1 pro", 
-        "Latop MacBook M2", 
-        "Latop MacBook M1 Intel",],
-}
+// magazinConstructii [
+//      numarMagazin = 4,
+//      denumireMagazin = "Magazinul tau de constructii",
+//      isOpen = true,
+//      adresa [
+//         street = "Sos Ploiesti",
+//         streetNumber = 4,
+//         town = "Ploiesti",
+//      ]
+// ],
 
-let user = {
-    name: "vafvbbff",
-    nomberOfFallowers:  1231465,
-    numberOfFollowing: 321,
-}
+let peaks = [1800, 2300, 1500, 3200, 5400, 1020, 2119];
+// let max = peaks[0];
 
-// Q: ce este un obiect?
-// A: este un tip de data din JS (numer, string sau boolean, array)
+// for (let i = 1; i <peaks.length; i++) {
+//     if (peaks[i] > max) {
+//         max = peaks[i];
+//     }
+// } console.log(max);
 
-// Q: La ce ajuta un obiect?
-// A: la gruparea unui set de informatii care se refera la aceste entitati 
+min = peaks[0];
 
-// Q: din ce este format un obiect?
-// A: este format in key-value sau proprietate (ce este in partea stanga este key si ce este dupa : este valoarea)
+for (let i = 1; i <peaks[i]; i++) {
+    if (peaks[i] < min) {
+        min = peaks[i];
+    }
+}console.log(min);
 
-// Q: Cum accesez o valore dintr-un obiect?
-// A: accesand proprietata in care sta acea valoarea
-// formulare: product.name
+let numbers = [10, 24, 0, 53, -94, 27, 0, 13, 12];
+let users = ["Alice", "Benjamin", "Alice", "Cosma"];
+let evenNumbers = [];
+let counter = 0;
 
-// Q: Ce nume pot pune unei proprietati?
-// A: orice. doar sa fie folosita notatia camelcase   
+for  (let i = 0; i < users.length; i ++)
+    if (users[i] === "Alice") {
+        counter++;
+    } console.log(counter);
 
-// Q: Ce valoare poate sa contine o proprietate:
-// A: orice valoare: number, string, boolea, array, obiect
-// formualre: product.related
-console.log(product.related);
+// for  (let i = 0; i < numbers.length; i ++) {
+//     if (numbers[i] % 2 === 0) {
+//         evenNumbers.push(numbers[i]);
+//     }
+// }  
 
-// Exercitiu: sa se creeze un obiect cu 4 proprietati: number, string, boolea, array
-let somebody = {
-    name: "Paul",
-    age: 32,
-    isFootballPlayer: true,
-    somebodyAdress: {
-        streetNumber: 5,
-        streetName: "Toma Caragiu",
-        town: "Roman",
-    },
-}
+// let max = evenNumbers[0];
+// for (let i = 1; i <evenNumbers.length; i++) {
+//     if (evenNumbers[i] > max) {
+//         max = evenNumbers[i];
+//     }
+// } console.log(max);
+// let mim = numbers[0];
 
-// ---- Exercitii ------
-let cartProducts = [
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] < min) {
+//         min = numbers[i]
+//     }
+// } 
+// let max = min;
+
+// for (let i = 0; i < numbers.length; i ++) {
+//     if (numbers[i] > max && numbers[i] % 2 === 1) {
+//         max = numbers[i];
+//     }
+// } console.log(max);
+//     if (numbers[i] > max && numbers[i] % 2 === 0) {
+//         max = numbers[i];
+//         console.log(`Cel mai mare numar par este ${max}`);
+//     } 
+//     else    {
+//     console.log("Array-ul nu contine numere pare");
+//     }
+// }
+
+
+let cartProduct = [
     {
         name: "Laptop",
         price: 5000,
         quantity: 1,
-        category: "electronics",
     },
     {
         name: "Whiskey",
         price: 200,
         quantity: 3,
-        category: "essentials",
     },
     {
-        name: "vin",
+        name: "Vin",
         price: 100,
         quantity: 2,
-        category: "essentials",
     },
 ];
 
-// Sa se scrie un algoritm care calculeaza totalul cartului (pret+cantitate).
-
-// let sum = 0; 
-
-// for (let i = 0; i < cartProducts.length; i++) {
-//     sum += cartProducts[i].price * cartProducts[i].quantity;}
-
-// if (sum >= 1000 ) {
-//         alert(`Ai obtinut o reducere de 10%. Noul total este de ${sum * 0.9} lei.`);
-//     }
-
-
-
-// "Ai obtinut o reducere de 10%. Noul total este de x lei."
-
-// Ex 2: sa se scrie un algoritm care afiseaza cel mai scump produs din cart
-
-// let max = cartProducts[0].price;
-
-// for (let i = 1; i < cartProducts.length; i++) {
-//     if (cartProducts[i].price > max) {
-//         max = cartProducts[i].price;
-//     }
-// } console.log(max);
-
-// Ex 3: sa se calculeza totalul produselor din cart care sunt din categorie "essentials"
 let sum = 0;
 
-for (let i = 0; i < cartProducts.length; i++) {
-    if (cartProducts[i].category === "essentials") {
-        sum += cartProducts[i].price * cartProducts[i].quantity;
-    }
-} console.log(sum);
-    
-    
+for (let i = 0; i < cartProduct.length; i++) {
+   sum += cartProduct[].price * cartProduct[i].quantity;
+ } console.log(sum);

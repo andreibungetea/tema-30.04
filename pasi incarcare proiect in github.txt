@@ -1,0 +1,20 @@
+## Pasi incarcare proiect in GitHub
+
+Pasul 1 - proiectul / tema e gata
+Pasul 2 - creezi repository in GitHub
+Pasul 3 - te intorci in VS Code si executi comenzile de mai jos:
+-> git init
+-> git add . ( comanda asta ii va spune git-ului ce vrei sa incarci in GitHub. punctul de la final cuprinde tot )
+-> git commit -m "implemented navbar" ( comanda asta va grupa toate modificarile intr-un singur commit. mesajul commit-ului trebuie sa fie descriptiv pentru modificarile aduse )
+-> git remote add origin git@github.com:Cristian-creator/test-3.git ( comanda asta o copiezi din GitHub, iar ea seteaza un link catre repository ca sa stie git-ul in ce repository se va incarca codul )
+-> git branch -M main ( optional - daca in stanga jos iti apare "master" in loc de "main" => executa comanda )
+-> git push -u origin main
+
+## Pasi modificare proiect in GitHub ( aici ai deja codul incarcat intr-o repository )
+
+-> git add .
+-> git commit -m "mesaj"
+-> git push
+
+!!!! Important !!!!
+dupa fiecare comanda trebuie sa fii atent la mesajul pe care il primesti
