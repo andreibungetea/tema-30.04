@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+:root {
+    --orange500: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --gray500: hsl(217, 12%, 63%);
+    --gray900: hsl(213, 19%, 18%);
+    --gray950: hsl(216, 12%, 8%);
+    --black: hsl(0, 0%, 0%);
+}
+
+body {
+    background-color: var(--black);
+}
+
+header {
+    background-color: var(--gray950);
+    max-width: 412px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 24px;
+    margin-bottom: 12px;
+}
+
+.star-image-card {
+    background-color: var(--gray900);
+    margin-bottom: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+h3 {
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+p {
+    color: var(--gray500);
+    margin-bottom: 16px;
+}
+
+/* CSS spacificity
+- un id adauga +100
+- o clasa adauga +10
+- un tagmane aauga +1
+*/
+
+.rating-buttons-container button {
+    align-items: center; 
+    background-color: var(--gray900);
+    color: var(--grey500);
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+}
+    
+.rating-buttons-container button:hover {
+    background-color: var(--orange500);
+    color: var(--gray900);
+} 
+
+.rating-buttons-container button.selected-rating {
+    background-color: var(--white);
+    color: var(--gray900);
+}
+
+.rating-buttons-container {
+    display: flex;
+    margin-bottom: 32px;
+    gap: 24px;
+}
+
+.submit-button-container {
+    background-color: var(--orange500);
+    width: 100%;
+    max-height: 45px;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.thank-you-card-container {
+   background-color: var(--black);
+}
+
+.final-card-container {
+    background-color: var(--gray900);
+    max-width: 412px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    border-radius: 24px;
+}
+
+.final-card-container img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.select-button-card { 
+    display: flex;
+    background-color: var(--gray900);
+    color: var(--orange500);
+    margin-bottom: 32px;
+    max-width: 192px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.final-card-container h3 {
+    text-align: center;
+}
+
+.final-card-container p {
+    color: var(--gray500);
+    text-align: center;
+}
