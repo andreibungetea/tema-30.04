@@ -93,13 +93,11 @@ p {
     padding-bottom: 12px;
 }
 
-/* thank-you-card-container */
 .thank-you-card-container {
    background-color: var(--black);
-   display: none;
 }
 
-.second-step-container {
+.final-card-container {
     background-color: var(--gray900);
     max-width: 412px;
     padding-left: 36px;
@@ -109,14 +107,14 @@ p {
     border-radius: 24px;
 }
 
-.second-step-container img {
+.final-card-container img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
 }
 
-.user-selection { 
+.select-button-card { 
     display: flex;
     background-color: var(--gray900);
     color: var(--orange500);
@@ -131,16 +129,11 @@ p {
     padding-right: 20px;
 }
 
-.second-step-container h3 {
+.final-card-container h3 {
     text-align: center;
 }
 
-.second-step-container p {
+.final-card-container p {
     color: var(--gray500);
     text-align: center;
 }
-
-/* .support-request-container {
-    font-weight: 700;
-    color: var(--orange500);
-} */
