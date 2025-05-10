@@ -74,3 +74,31 @@ const handleButtonFiveClick = () => {
 };
 
 buttonFive.addEventListener("click", handleButtonFiveClick);
+
+// Top 3  cele mai comune cazuri in care folosim DOM-ul
+// 1. Sa folosim elemente
+// 2. Sa adaugam / stergem / modificam clase
+// 3. Sa adaugam eventListner - specific pt butoane
+
+
+// Submit button
+
+const submitButton = document.querySelector(".raiting-submit-button");
+const firstStepContainer = document.querySelector(".first-step-container");
+const secontStepContainer = document.querySelector(".second-step-container");
+const userSelection = document.querySelector(".user-selection");
+
+
+const handleSubmit = () => {
+    const currentlySelectedButton = document.querySelector(".selected-rating");
+
+    if (currentlySelectedButton !== null) {
+        firstStepContainer.style.display = "none";
+        secontStepContainer.style.display = "block";
+        userSelection.textContent = currentlySelectedButton.textContent;
+    } else 
+    alert("Please select rating"); 
+};
+
+submitButton.addEventListener("click", handleSubmit);
+

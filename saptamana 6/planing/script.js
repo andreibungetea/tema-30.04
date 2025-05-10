@@ -6,10 +6,45 @@
 // daca conditia este adevarata atunci se va executa conditia din acoladele for-ului
 // daca conditia este falsa atunci se incheie executia intregului for
 // 3. increment / decrement - este executata dupa fiecare repetitie / iteratie 
-console.log("start...")
-
 // se creeaza si se memoreaza o variabila i cu valoarea 0: let i = 0  --> zona de initializare
 //  care este executate inainte de fiecare conditie si iteratie: i < 4; Aici se face comparatia - clg o singura data (avem o sg linie de cod)
+// console.log("start...")
+
+for (let i = 0; i < 4; i++) {
+        console.log(`Loop ${i}`);
+}
+console.log("finish");
+
+let y = 4; 
+
+if (y % 2 === 0) {
+    console.log("y este divizibil cu 2");
+}
+
+let x = 20;
+for (let i = 0; i < 21; i++) {
+    // console.log(i);
+    
+    
+    if (i % 2 === 0 && i % 3 === 0) {
+        console.log(i);
+    }
+}
+
+// let sum = 0;
+let prod = 1;
+
+for (let i = 1; i <= 10; i++) {
+    prod *= i;
+} console.log(prod);
+
+
+// i = 0 -> 0 < 4 true => i++ = 1;
+// i = 1 -> 1 < 4 true => i++ = 2;
+// i = 2 -> 2 < 4 true => i++ = 3; 
+// i = 3 -> 3 < 4 true => i++ = 4;
+// i = 4 -> 4 < 4 false  - forul se opreste.
+
 //  Apoi avem zona de iteratie i++
 
 // Repetitia 1: i = 0 --> i < 4 (true) --> clg --> i ++
@@ -18,17 +53,22 @@ console.log("start...")
 // Repetitia 4: i = 3 --> 3 < 4 (true) --> clg --> i ++
 // Repetitia 5: i = 4 --> 4 < 4 (false) --> aici se opreste executia for-ului si se trece la urmatoarea linie de cod din afara for-ului
 
-// // 0 1 2 3
+// let x = 5; 
+x -= 1;
+x++;
+console.log(x);
+
+// 0 1 2 3
 for (let i = 0; i < 4; i ++) {
     console.log(i);
 } 
 
-    // // Loop 1 Loop 2 Loop 3 Loop 4
+// Loop 1 Loop 2 Loop 3 Loop 4
 for (let i = 0; i < 4; i ++) {
     console.log(`Loop ${i}`);
 } 
 
-// console.log("finish");
+console.log("finish");
 
 //shortcuts pt calcule
 // let x = 5;
@@ -55,25 +95,25 @@ for (let i = 0; i < 4; i ++) {
 // Sa se afiseze in consola "y divizibil cu 2" daca este divizibil cu 2
 
 // mod (%) - operator aritmetic. Face impartirea si afiseaza restul    
-let y = 11;
+// let y = 11;
 
 if (y % 2 === 0) {
     console.log("y divizibil cu 2");
 }
 
-// for (let i = 0; i < 11; i ++) {
-//     console.log(i);
-// }
+for (let i = 0; i < 11; i ++) {
+    console.log(i);
+}
 
-// for (let i = 0; i <= 10; i ++) {
-//     if (i % 2 === 0)
-//         console.log(i);
-// }
+for (let i = 0; i <= 10; i ++) {
+    if (i % 2 === 0)
+        console.log(i);
+}
 
-// for (let i = 0; i <= 10; i ++) {
-//     if (i % 2 === 1)
-//         console.log(i);
-// }
+for (let i = 0; i <= 10; i ++) {
+    if (i % 2 === 1)
+        console.log(i);
+}
 
 for (let i = 0; i < 21; i ++) {
     if (i % 2 === 0 && i % 3 === 0)
@@ -87,39 +127,39 @@ for (let i = 0; i < 16; i++)
 
 
 // Exercitiul 2 - Folosind un for sa se afiseze toate numerele de la 0 la 10
-// for (let i = 0; i < 11; i ++) {
-//     console.log(i);
-// } 
+for (let i = 0; i < 11; i ++) {
+    console.log(i);
+} 
 
 // Exercitiul 2 - Folosind un for sa se afiseze toate numerele multipli de 2 (pare) de la 0 la 10
-// for (let i = 0; i < 11; i ++) {
-//     if (i % 2 === 0) {
-//     console.log(i);
-//     } 
-// }
+for (let i = 0; i < 11; i ++) {
+    if (i % 2 === 0) {
+    console.log(i);
+    } 
+}
 
 // Exercitiul 3 - Folosind un for sa se afiseze toate numerele impare de la 0 la 10
-// for (let i = 0; i < 11; i ++){
-//     if (i % 2 === 1) {
-//         console.log(i);
-//     }
-// }
+for (let i = 0; i < 11; i ++){
+    if (i % 2 === 1) {
+        console.log(i);
+    }
+}
 
 // Exercitiul 4 - Folosind un for sa se afiseze toate numerele multipli de 2 (pare) si de 3 de la 0 la 20
-// for (let i = 0; i < 21; i ++){
-//     if (i % 2 === 0 && i % 3 === 0) {
-//         console.log(i);
-//     }
-// }
+for (let i = 0; i < 21; i ++){
+    if (i % 2 === 0 && i % 3 === 0) {
+        console.log(i);
+    }
+}
 // 2 : 2 = 1 rest 0
 // if ( 0 === 0 (true) && 2 % 3 === 0 (false) ) -> false si nu se da csg de i. E bine pt ca vrem sa se afiseze si multipli de 3.
 // Daca punem cu || se vor afisa doar multipli de 2
 
-// for (i = 0; i < 16; i ++) {
-//     if(i % 3 === 0) {
-//         console.log(i);
-//     }
-// }
+for (i = 0; i < 16; i ++) {
+    if(i % 3 === 0) {
+        console.log(i);
+    }
+}
 
 // Algoritm pt calcularea sumei unui sir de numere de la 0 la 10 --- SUM (+) ---
 
@@ -131,17 +171,41 @@ for (let i = 0; i < 16; i++)
 //     prod *= i;
 //  console.log(prod);
 
-// let numbers = [13,5,78,-3,106];
-
-let shoppingList = ["apa", 'lapte', "alune"];
-console.log(shoppingList);
-shoppingList.push('lame de ras');
-shoppingList.push( 'bere neagra');
-console.log(shoppingList);
+// let numbers = [5, 3, 32, -2, 107];
 
 
+//     console.log(numbers[4]);
+//     numbers.push(18);
+// console.log(numbers);
+
+// let shoppingList = ["apa", 'lapte', "alune"];
+// console.log(shoppingList);
+// shoppingList.push('lame de ras');
+// shoppingList.push( 'bere neagra');
+// console.log(shoppingList);
+
+// let shoppingList = ["lapte", "faina", "apa", "paste"];
+// shoppingList.push("piper", "sare"); 
+// console.log(shoppingList);
+
+// let myName = "BungeteaAndrei";
+// console.log(myName.length);
 
 // let sum = 0;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     sum =+ numbers[i];
+// } console.log(sum);
+let numbers = [5, 3, 32, -2, 107];
+
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    if(numbers[i] >= 0) {
+        sum += numbers[i];
+    }
+} console.log(sum);
+
 
 // for (let i = 1; i < 11; i ++) {
 //     sum += i;  // 0 + 1 + 2 + 3 + 4 .... + 10
@@ -188,7 +252,7 @@ console.log(shoppingList);
 // console.log(list);
 
 // ------  Algoritmi pt array-uri ------
-let numbers = [5, 3, 32, -2, 107];
+// let numbers = [5, 3, 32, -2, 107];
 // index       0  1  2   3    4
 // index    5
 
@@ -205,11 +269,11 @@ let numbers = [5, 3, 32, -2, 107];
 
 // numbers.push(18);
 
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-    }
-    console.log(numbers[i]);
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//     }
+//     console.log(numbers[i]);
+// }
 
 // i = 0   ->     i < 5 (true)  ->  i < number.lenght[i]    - >   i ++
 // 0 corespondent\i < L array-ului\ i < 5 - 5 este corespondetul\ i creste
