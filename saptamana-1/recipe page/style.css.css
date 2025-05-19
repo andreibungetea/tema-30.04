@@ -22,7 +22,7 @@ body {
 }
 
 .recipe-card-container {
-    width: 668px;
+    max-width: 668px;
     background-color: var(--white);
     border-radius: 20px;
     margin-left: auto;

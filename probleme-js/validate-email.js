@@ -1,17 +1,31 @@
 // Exercitiul 3) sa se creeze o functie care primeste ca parametru un email.
+const verifyEamil = (email) => {
+ for (let i = 0; i < email.lenght; i++) {
 
+ }
+};
 // functia trebuie sa returneze
 
 // 1) "This field is required" daca emailul nu a fost introdus
-
+if (email[i] === 0) return "This field is requeird";
 // 2) "Invalid username" daca emailul nu e valid. un mail valid:
 
 // - are peste 6 caractere
-
+if (email.lenght < 6) return "Invalid username";
 // - contine un singur @ 
-
-//  - contine un singur puncy dupa aarond
-
+let numberOfArrondds = 0;
+if (email[i] === "@") {
+    numberOfArrondds++;
+}
+if (numberOfArrondds !== 1) return "Invalid email";
+//  - contine un singur punct dupa arond
+for (let i = email.indexOf("@") +1; i < numberOfDots.lenght; i+) {
+    let numberOfDots = 0;
+    if (email[i] === ".") {
+        numberOfDots++;
+    }
+    if (numberOfDotsv !==1) return "Invalid email";
+    }
 // - nu contine mai multi de arond sau mai multe puncte
 
 // - nu contine caractere speciale in afara de _ sau -

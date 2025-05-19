@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.tooltip-wrapper {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    display: none;
+    position: relative;
+    bottom: -24px;
+    left: -68px;
+    background-color: burlywood;
+    color:brown;
+    border-radius: 4px;
+    padding: 4px 4px;
+    z-index: 90;
+    white-space: nowrap;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+    display: inline;
+}
+
+.tooltip-arrow {
+    display: none;
+    position: absolute;
+    bottom: -12px;
+    left: 64px;
+    background-color: burlywood;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+}
+
+.tooltip-wrapper:hover .tooltip-arrow {
+    display:inline;
+}
+
+
+.tooltip-text:focus {
+    background-color: red;
+}
+
+.tooltip-text:activ {
+    background-color: red;
+}
