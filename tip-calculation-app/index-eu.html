@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p class="title-app-container">
+      SPLI <br />
+      TTER
+    </p>
+    <div class="section-container">
+      <section>
+        <form class="calculator-form">
+          <div class="form-input-container">
+            <div class="label-container">
+              <label class="standard-label" for="bill">Bill</label>
+              <p class="standard-input-error hide bill-input-error">
+                Must be greater than 0
+              </p>
+            </div>
+            <div class="input-container">
+              <input
+                class="standard-input with-left-side-icon"
+                type="number"
+                name="bill"
+                id="bill"
+              />
+              <img class="left-side-icon" src="./assets/icon-dollar.svg" />
+            </div>
+          </div>
+          <div class="form-input-container">
+            <label class="standard-label" for="custom-tip">Select Tip %</label>
+            <div class="standard-button">
+              <div>
+                <button class="tip-button button-contained" type="button">
+                  5%
+                </button>
+                <button class="tip-button button-contained" type="button">
+                  10%
+                </button>
+                <button class="tip-button button-contained" type="button">
+                  15%
+                </button>
+                <br />
+              </div>
+              <div>
+                <button class="tip-button button-contained" type="button">
+                  25%
+                </button>
+                <button class="tip-button button-contained" type="button">
+                  50%
+                </button>
+                <input
+                  class="standard-input button-contained"
+                  type="number"
+                  name="custom-tip"
+                  id="custom-tip"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-input-container">
+            <label class="standard-label" for="number-of-people"
+              >Number of People</label
+            >
+            <p class="standard-input-error hide person-input-error">
+              Can't be zero
+            </p>
+            <div class="input-container">
+              <input
+                class="standard-input with-left-side-icon"
+                type="number"
+                name="number-of-people"
+                id="number-of-people"
+              />
+              <img class="left-side-icon" src="./assets/icon-person.svg" />
+            </div>
+          </div>
+          <button type="submit">CALCULATE</button>
+        </form>
+      </section>
+
+      <!-- Total amount card -->
+      <section>
+        <form class="total-amount-card">
+          <div class="total-tip-container">
+            <label for="tip-amount"
+              >Tip amount <br />
+              <span class="per-person-container">/ person</span>
+            </label>
+            <div
+              class="input-container with-left-side-icon input-dollar-container"
+            >
+              <input name="tip-amount" id="tip-amount" />
+              <img class="left-side-icon" src="./assets/icon-dollar.svg" />
+            </div>
+          </div>
+          <div class="total-tip-container">
+            <label for="total-per-person"
+              >Total <br />
+              <span class="per-person-container">/ person</span></label
+            >
+            <div class="input-container with-left-side-icon">
+              <input
+                type="number"
+                name="total-per-person"
+                id="total-per-person"
+              />
+              <img class="left-side-icon" src="./assets/icon-dollar.svg" />
+            </div>
+          </div>
+          <button>RESET</button>
+        </form>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

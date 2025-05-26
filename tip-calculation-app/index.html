@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="./assets/logo.svg" class="logo-image" />
+    <section class="splitter-container">
+      <form class="calculator-form">
+        <!-- Bill -->
+        <div>
+          <div class="label-container">
+            <label class="standard-label" for="bill">Bill</label>
+            <p class="standard-input-error hide bill-input-error">
+              Must be greater than 0
+            </p>
+          </div>
+          <div class="input-container">
+            <input
+              class="standard-input with-left-side-icon"
+              type="number"
+              name="bill"
+              id="bill"
+            />
+            <img class="left-side-icon" src="./assets/icon-dollar.svg" />
+          </div>
+        </div>
+
+        <!-- Tip button container -->
+        <div class="tip-button-container">
+          <!-- <div class="label-container">
+            <label class="standard-label" for="custom-tip">Select Tip %</label>
+            <p class="standard-input-error hide custom-tip-input-error">
+              Must be equal or greater than 0
+            </p>
+          </div> -->
+          <div class="two-botton-container">
+            <button class="tip-button button-display" type="button">5%</button>
+            <button class="tip-button button-display" type="button">10%</button>
+          </div>
+          <div class="two-botton-container">
+            <button class="tip-button button-display" type="button">15%</button>
+            <button class="tip-button button-display" type="button">25%</button>
+          </div>
+          <div class="two-botton-container">
+            <button class="tip-button button-display" type="button">50%</button>
+            <input
+              class="standard-input custom-tip"
+              type="number"
+              name="custom-tip"
+              id="custom-tip"
+            />
+          </div>
+        </div>
+
+        <!-- Tip button container desktop -->
+        <div class="tip-button-container-desktop">
+          <div class="label-container">
+            <label class="standard-label" for="custom-tip">Select Tip %</label>
+            <p class="standard-input-error hide custom-tip-input-error">
+              Must be equal or greater than 0
+            </p>
+          </div>
+          <div class="three-botton-container">
+            <button class="tip-button button-display" type="button">5%</button>
+            <button class="tip-button button-display" type="button">10%</button>
+            <button class="tip-button button-display" type="button">15%</button>
+          </div>
+          <div class="three-botton-container">
+            <button class="tip-button button-display" type="button">25%</button>
+            <button class="tip-button button-display" type="button">50%</button>
+            <input
+              class="standard-input custom-tip"
+              type="number"
+              name="custom-tip"
+              id="custom-tip"
+            />
+          </div>
+        </div>
+
+        <!-- Number of people -->
+        <div>
+          <label class="standard-label" for="number-of-people">
+            Number of People
+          </label>
+          <p class="standard-input-error hide custom-tip-input-error">
+            Must be greater than 0
+          </p>
+          <div class="input-container">
+            <input
+              class="standard-input with-left-side-icon number-of-people"
+              type="number"
+              name="number-of-people"
+              id="number-of-people"
+            />
+            <img class="left-side-icon" src="./assets/icon-person.svg" />
+          </div>
+          <button class="standard-input" type="submit">CALCULATE</button>
+        </div>
+      </form>
+
+      <!-------- Calculator form ------->
+      <div class="total-reset-container">
+        <div class="paragraph-total-container">
+          <p>
+            Tip Amount <br />
+            <span>/ person</span>
+          </p>
+          <p class="tip-per-person">$ 0.00</p>
+        </div>
+        <div class="paragraph-total-container">
+          <p>Total <br /><span>/ person</span></p>
+          <p class="total-per-person">$ 0.00</p>
+        </div>
+        <button class="reset-button">RESET</button>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+
+/* 
+
+-> Breakpoints
+640px
+768px
+1024px
+1280px
+1536px
+
+-> Font weights
+700
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Mono";
+}
+
+:root {
+    --green-400: hsl(172, 67%, 45%); /* #26C2AE */
+    --green-900: hsl(183, 100%, 15%); /*  */
+    
+    --grey-50: hsl(189, 47%, 97%); /* #F3F9FA */
+    --grey-200: hsl(185, 41%, 84%); /*  */
+    --grey-400: hsl(184, 14%, 56%); /*  */
+    --grey-500: hsl(186, 14%, 43%); /*  */
+    --grey-900: hsl(183, 100%, 15%); /* #00474B */
+
+    --white: hsl(0, 100%, 100%);
+
+    --orange-400: #E17052;
+}
+
+body {
+    background-color: var(--grey-200);
+}
+
+.logo-image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.splitter-container {
+    background-color: var(--white);
+    padding: 24px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+
+}
+
+/* --- Common --- */
+.tip-button-container {
+    /* display: flex; */
+    margin-bottom: 24px;
+    /* gap: 24px; */
+}
+
+.calculator-form {
+    margin-bottom: 24px;
+}
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.standard-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--grey-500);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.standard-input {
+    background-color: var(--grey-50);
+    color: var(--green-900);
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 36px; */
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.standard-input:focus {
+    border: 2px solid var(--green-400);
+    outline: none;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.left-side-icon {
+    position: absolute;
+    left: 18px;
+    top: 16px;
+}
+
+.with-left-side-icon {
+    padding-left: 48px;
+}
+
+.standard-input-error {
+    color: var(--orange-400);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+.button-display {
+    display: flex;
+    background-color: var(--green-900);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 42px;
+    padding-left: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.two-botton-container {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.two-botton-container:last-of-type {
+    margin-bottom: 24px;
+}
+
+.three-botton-container { 
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 12px;
+}
+
+.custom-tip {
+    display: flex;
+    max-width: 36px;
+    background-color: var(--grey-50);
+    color: var(--grey-400);
+    border-radius: 4px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 42px;
+    padding-left: 42px;
+    /* margin-left: auto; */
+    margin-right: auto;
+}
+
+/* --- Calculator Form --- */
+.total-reset-container {
+    background-color: var(--green-900);
+    max-width: 350px;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.paragraph-total-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.total-reset-container button {
+    background-color: var(--green-400);
+    color: var(--green-900);
+    border: none;
+    display: flex;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 6px;   
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.total-reset-container p {
+    color: var(--grey-50);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.total-reset-container span {
+    color: var(--green-400);
+    font-size: 12px;
+}
+
+.tip-per-person {
+    color: var(--green-400);
+}
+.total-per-person {
+    color: var(--green-400);
+}
+
+cursor: pointer;
+
+@media (min-width: 1024px) {
+    .splitter-container {
+        display: flex;
+        /* flex-direction: row; */
+        width: 100%;
+        max-width:650px;
+        max-height: 324px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 24px;
+    }
+
+    .two-botton-container {
+     display: none;
+    }
+
+    .three-botton-container {
+        display: flex;
+    }
+
+    .tip-button-container-desktop {
+        margin-top: -12px;
+    }
+
+    .input-container {
+        margin-bottom: 12px;;
+    }
+
+    
+}
+
+@media(max-width: 1024px) {
+    .tip-button-container-desktop {
+        display: none;
+    }
+}
