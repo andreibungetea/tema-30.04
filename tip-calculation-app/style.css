@@ -225,7 +225,7 @@ body {
     color: var(--green-400);
 }
 
-cursor: pointer;
+
 
 @media (min-width: 1024px) {
     .splitter-container {
