@@ -1,0 +1,31 @@
+/* .delete-button {
+    display: none;
+}
+
+.todo-container:hover .delete-button {
+    display: block;
+} */
+.mark-todo-as-completed {
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    background-color: red;
+ }
+
+ .todo-container.completed p {
+    text-decoration: line-through;
+    color: #4D5067;
+ }
+
+ .todo-container.completed .mark-todo-as-completed {
+    background-color: green;
+ }
+
+/* vreau ca in momentul selectarii butonului sa aibe culoarea asta */
+ .filter-button.selected-filter { 
+    color: #3a7cfd;
+ }
+
+ .hide {
+    display: none;
+ }

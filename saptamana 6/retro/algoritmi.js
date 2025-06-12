@@ -16,7 +16,7 @@
 // //             0     1     2     3
 // let max = peaks[0];
 
-// // // == Varianta scalanila --- contine un for 
+// // // == Varianta scalabila --- contine un for 
 // for (i = 1; i < peaks.length; i++) {
 //     if (peaks [i] > max) {
 //         max = peaks [i];

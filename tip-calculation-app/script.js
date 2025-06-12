@@ -53,7 +53,7 @@ const handleSubmit = (e) => {
     billInputError.classList.add("hide");
   }
    // 4. Sterge continutul inputului custom
-customTipInput.value = "";
+  customTipInput.value = "";
 
 //------- Custom tip ------
 const customTip = Number(data.get("custom-tip"));
@@ -73,7 +73,7 @@ if (numberOfPeople <= 0) {
     customTipInputError.classList.add("hide");
 }
 
-// ---Calculate tip per person---
+// -------- Calculate tip per person --------------
 
 // accesam butonul selectat
 const selectedTip = document.querySelector(".selected-tip");

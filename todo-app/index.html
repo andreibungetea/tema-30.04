@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ToDoApp</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form class="add-new-todo-form">
-      <input
-        type="text"
-        placeholder="Create a new todo"
-        name="new-todo"
-        id=""
-      />
+      <input type="text" placeholder="Create a new todo..." name="new-todo" />
       <button type="submit">Add</button>
     </form>
     <div class="todos-container"></div>
-
+    <div>
+      <p><span class="number-of-items-left">0</span> items left</p>
+    </div>
+    <div>
+      <button value="all" class="filter-button selected-filter">All</button>
+      <button value="active" class="filter-button">Active</button>
+      <button value="completed" class="filter-button">Completed</button>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

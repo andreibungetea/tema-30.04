@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="master-cards-container">
+        <img src="./assets/bg-main-desktop.png" class="main-desktop-image" />
+        <div class="cards-container">
+          <!-- Card front -->
+          <div class="card-front">
+            <img src="./assets/card-logo.svg" class="image-card-front" />
+            <p class="card-front-content">0000 0000 0000 0000</p>
+            <div class="name-data-container">
+              <p class="card-front-name">Jane Appleseed</p>
+              <p class="card-front-date">00/00</p>
+            </div>
+          </div>
+          <!-- Card back -->
+          <div class="card-back">
+            <p class="card-cvc">000</p>
+          </div>
+        </div>
+        <!-- Card form -->
+        <form class="card-form">
+          <div>
+            <label class="standard-label" for="cardholder-name">
+              Cardholder-name
+            </label>
+            <input
+              class="standard-input"
+              type="text"
+              placeholder="e.g. Jane Apppleseed"
+              id="cardholder-name"
+              name="cardholder-name"
+            />
+            <p class="hide input-error cardholder-name-error"></p>
+          </div>
+          <!-- --- Card number --- -->
+          <div>
+            <label class="standard-label" for="card-number">Card number</label>
+            <input
+              class="standard-input"
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+              id="card-number"
+              name="card-number"
+              max="19"
+            />
+            <p class="hide input-error card-number-error"></p>
+          </div>
+
+          <!-- ---  Expire date  ----- -->
+          <div class="expire-date-cvc-container">
+            <div class="expire-date-my">
+              <label class="standard-label" for="expire-date"
+                >Exp. date (Mm/Yy)</label
+              >
+              <input
+                class="standard-input expire-input"
+                type="text"
+                placeholder="Mm"
+                id="expire-date"
+                name="expire-date"
+              />
+              <p class="hide input-error card-expire-date-error"></p>
+              <!-- <label class="standard-label" for="expire-date-yy"></label> -->
+              <input
+                class="standard-input expire-input"
+                type="text"
+                placeholder="Yy"
+                id="expire-date"
+                name="expire-date"
+              />
+              <p class="hide input-error card-expire-date-error"></p>
+            </div>
+
+            <!-- --- CVC --- -->
+            <div>
+              <label class="standard-label" for="cvc">Cvc</label>
+              <input
+                class="standard-input cvc-input"
+                type="text"
+                placeholder="e.g. 123"
+                id="cvc"
+                name="cvc"
+              />
+              <p class="hide input-error cvc-error"></p>
+            </div>
+          </div>
+          <button>
+            <a href="" target="_blank"> Confirm </a>
+          </button>
+          <div class="hide second-step-container">
+            <h3>THANK YOU!</h3>
+          </div>
+        </form>
+      </div>
+    </header>
+    <script src="./script.js"></script>
+  </body>
+</html>

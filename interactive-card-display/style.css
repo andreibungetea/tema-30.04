@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Space Grotesk";
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+    --linear-gradient-active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --red: hsl(0, 100%, 66%);
+}
+
+.hide {
+    display: none !important;
+}
+
+/* --------- Cards Container --------- */
+.cards-container {
+    height: 240px;
+    background-image: url("./assets/bg-main-mobile.png");
+    position: relative;
+}
+
+.card-back {
+    background-image: url("./assets/bg-card-back.png");
+    height: 157px;
+    width: 286px;
+    background-size: cover;
+    position: absolute;
+    right: 16px;
+    top: 32px;
+}
+
+.card-cvc {
+    position: absolute;
+    top: 71px;
+    right: 39px;
+    font-weight: 500;
+    font-size: 9px;
+    color: var(--white);
+}
+
+.card-front {
+    background-image: url("./assets/bg-card-front.png");
+    height: 157px;
+    width: 286px;
+    background-size: cover;
+    position: absolute;
+    top: 126px;
+    left: 16px;
+    padding: 20px;
+}
+
+/* --------- Form --------- */
+.card-form {
+    margin-top: 70px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.standard-label {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--very-dark-violet);
+    text-transform: uppercase;
+}
+
+.standard-input {
+    color: var(--very-dark-violet);
+    border-width: 1px;
+    border-color: var(--light-grayish-violet);
+    border-style: solid;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.input-error {
+    color: var(--red);
+}
